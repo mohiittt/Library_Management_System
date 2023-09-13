@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <!-- Add links to your CSS stylesheets and any additional libraries here -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Library Management System</h1>
+    </header>
+
+    <main>
+        <section class="books">
+            <h2>Books</h2>
+            <!-- Add a table to display book information -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>ISBN</th>
+                        <th>Stock</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Use JavaScript to populate the table with book data -->
+                </tbody>
+            </table>
+        </section>
+
+        <section class="members">
+            <h2>Members</h2>
+            <!-- Add a table or list to display member information -->
+            <ul>
+                <!-- Use JavaScript to populate the list with member data -->
+            </ul>
+        </section>
+
+        <section class="transactions">
+            <h2>Transactions</h2>
+            <!-- Add a table to display transaction history -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Transaction ID</th>
+                        <th>Book Title</th>
+                        <th>Member Name</th>
+                        <th>Issue Date</th>
+                        <th>Return Date</th>
+                        <th>Fee</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Use JavaScript to populate the table with transaction data -->
+                </tbody>
+            </table>
+        </section>
+
+        <section class="books">
+            <h2>Books</h2>
+            <!-- Form for adding a new book -->
+            <form id="add-book-form">
+        <!-- Add input fields for book details (title, author, ISBN, etc.) -->
+        <!-- Add a "Add Book" button to submit the form -->
+            </form>
+
+    <!-- Form for updating an existing book -->
+            <form id="update-book-form">
+        <!-- Add input fields for updating book details -->
+        <!-- Add a "Update Book" button to submit the form -->
+            </form>
+
+    <!-- Form for deleting a book -->
+            <form id="delete-book-form">
+        <!-- Add input field for book ID or title to delete -->
+        <!-- Add a "Delete Book" button to submit the form -->
+            </form>
+
+    <!-- Table for displaying a list of books (you've already created this) -->
+            <table>
+                <thead>
+            <!-- Table headers for book information (Title, Author, ISBN, etc.) -->
+                </thead>
+                <tbody>
+            <!-- Book rows will be populated here using JavaScript -->
+                </tbody>
+            </table>
+        </section>
+
+        <section class="add-book">
+            <h2>Add a Book</h2>
+            <form id="add-book-form">
+                <label for="book-title">Title:</label>
+                <input type="text" id="book-title" name="title" placeholder="Enter book title" required>
+
+                <label for="book-authors">Author(s):</label>
+                <input type="text" id="book-authors" name="authors" placeholder="Enter author(s)" required>
+
+
+                <label for="book-isbn">ISBN:</label>
+                <input type="text" id="book-isbn" name="isbn" placeholder="Enter ISBN" required>
+
+                <label for="book-publisher">Publisher:</label>
+                <input type="text" id="book-publisher" name="publisher" placeholder="Enter publisher">
+
+                <label for="book-pages">Pages:</label>
+                <input type="number" id="book-pages" name="pages" placeholder="Enter number of pages">
+
+                <label for="book-quantity">Quantity:</label>
+                <input type="number" id="book-quantity" name="quantity" placeholder="Enter quantity" required>
+
+        <!-- You can add more input fields for additional book details as needed -->
+                <button type="submit">Add Book</button>
+            </form>
+        </section>
+
+
+        <section class="add-member">
+            <h2>Add a Member</h2>
+            <form id="add-member-form">
+                <label for="member-name">Name:</label>
+                <input type="text" id="member-name" name="name" placeholder="Enter member's name" required>
+
+                <label for="member-contact">Contact Info:</label>
+                <input type="text" id="member-contact" name="contact_info" placeholder="Enter contact information" required>
+
+        <!-- You can add more input fields for additional member details as needed -->
+
+                <button type="submit">Add Member</button>
+            </form>
+        </section>
+
+        <section class="import-books">
+            <h2>Import Books</h2>
+            <form id="import-books-form">
+                <label for="import-title">Title:</label>
+                <input type="text" id="import-title" name="title" placeholder="Enter book title" required>
+
+                <label for="import-quantity">Quantity:</label>
+                <input type="number" id="import-quantity" name="quantity" placeholder="Enter quantity" required>
+
+                <button type="submit">Import Books</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Add links to your JavaScript files at the end of the body, if applicable -->
+    <script src="script.js"></script>
+</body>
+</html>
